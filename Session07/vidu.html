@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function check_odd_even_bit(n){
+    //flag = 1 => số lẻ 
+    //flag = 0 => số chẵn
+
+    let flag = 0;
+    if( n & 1 == 1 ) flag= 1;
+    return flag;
+}
+
+
+let n= prompt("Nhap so nguyen= ");
+let check = check_odd_even_bit(n);
+
+if( check == 0 ) console.log(n + " la so chan");
+else console.log(n + " la so le");
+let result=0;
+for (let i = 0; i<5; i++) {
+    result+=i;}
+    console.log(result);
+}
+
+    </script>
+</body>
+</html>
