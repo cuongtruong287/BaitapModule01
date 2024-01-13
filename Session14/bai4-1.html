@@ -12,12 +12,10 @@
         }
 
         h2 {
-            font-size: 36px;
+            font-size: 100px;
         }
 
-        p {
-            font-size: 14pt;
-        }
+
 
         #image-gallery {
             width: 600px;
@@ -25,7 +23,8 @@
         }
 
         #current-image {
-            width: 100%;
+            width: 2000px;
+            height: 1300px;
         }
 
         #image-thumbs {
@@ -35,35 +34,25 @@
         }
 
         .thumb {
-            width: 80px;
-            height: 80px;
+            width: 150px;
+            height: 150px;
             object-fit: cover;
             margin-right: 10px;
             cursor: pointer;
-        }
-        #image-thumbs{
-            margin-bottom: 20px;
-            margin-left: 20px;
-            overflow: hidden;
-            width: 700px;
         }
     </style>
 </head>
 
 <body>
-<div class = "container">
-    <div class="intro">
-        <h2>Arsenal Player</h2>
-        <p>View Img</p>
+    <div class="container">
+        <div class="intro">
+            <h2>Arsenal Player</h2>
+        </div>
+        <div id="image-gallery">
+        </div>
+        <img id="current-image" src="../img/image1.jpeg" alt="image 1">
+        <div id="image-thumbs"></div>
     </div>
-    <div id="image-gallery">
-    </div>
-    <img id="current-image" src="../img/image1.jpeg" alt="image 1">
-    <div id="image-thumbs"></div>
-    <div onclick="backImg()" id="btback" style="color: antiquewhite;">❮</div>
-    <div onclick="nextImg()" id="btnext" style="color: antiquewhite;">❯</div>
-    </div>
-</div>
     <script>
         var currentImage = document.getElementById("current-image");
         var imageThumbs = document.getElementById("image-thumbs");
