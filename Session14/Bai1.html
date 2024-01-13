@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a>This is a text.This is a text.This is a text.</a>
+    <br>
+    <button onclick="hide()">Hide Text</button>
+    <button onclick="show()">Show Text</button>
+
+    <script>
+        function hide() {
+            let element = document.getElementsByTagName("a")
+            let hide = element[0].style.display = "none";
+            console.log(hide);
+        }
+        function show() {
+            let element = document.getElementsByTagName("a")
+            let show = element[0].style.display = "block";
+            console.log(show);
+        }
+    </script>
+</body>
+</html>

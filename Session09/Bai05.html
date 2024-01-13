@@ -9,12 +9,38 @@
 
 <body>
     <script>
-        let nums = [1, 5, 8, 7, 9, 6, 5, 41, 2, 6, 55, 4, 8];
-        function soSanh(a, b) {
-            return a - b;
+        // let nums = [1, 5, 8, 7, 9, 6, 5, 41, 2, 6, 55, 4, 8];
+        // function soSanh(a, b) {
+        //     return a - b;
+        // }
+        // nums.sort(soSanh);
+        // document.write(nums);
+
+        let nums2 = [1, 5, 8, 7, 9, 6, 5, 41, 2, 6, 55, 4, 8];
+        for (let i = 0; i < nums2.length; i++) {
+            for (let j = 0; j < nums2.length; j++) {
+                if (nums2[j] > nums2[j + 1]) {
+                    let temp = nums2[j];
+                    nums2[j] = nums2[j + 1];
+                    nums2[j + 1] = temp;
+                }
+            }
+
         }
-        nums.sort(soSanh);
-        document.write(nums);
+        console.log(nums2);
+        let mangs = [7, 3, 9, 4];
+        for (let i = 0; i < mangs.length; i++) {
+            for (let j = 0; j < mangs.length; j++) {
+
+            }
+        }
+        /*
+                let a = 6;
+        let b = 16;
+        let c = a;
+        a = b; b = c;
+        console.log(a);
+        console.log(b); */
     </script>
 </body>
 

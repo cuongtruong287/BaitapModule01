@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont {
+            width: 500px;
+            height: 300px;
+            margin: 5px;
+        }
+
+        .header {
+            margin: 5px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            cursor: pointer;
+            position: relative;
+            padding: 10px 8px 10px 40px;
+            background: #eee;
+            font-size: 18px;
+            transition: 0.5s;
+            list-style: none;
+        }
+
+        ul li:hover {
+            background: #ddd;
+        }
+
+        ul li.checked {
+            background: #888;
+            color: #fff;
+            text-decoration: line-through;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        ul li.checked::before {
+            content: '';
+            position: absolute;
+            border-color: #fff;
+            border-style: solid;
+            border-width: 0 2px 2px 0;
+            top: 10px;
+            left: 16px;
+            transform: rotate(45deg);
+            height: 15px;
+            width: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="header">
+            <h2>My To Do List</h2>
+            <input type="text" id="myInput" placeholder="">
+            <span onclick="newTodolist()" class="addtdl">Add</span>
+        </div>
+        <ul id="tdl">
+            <li class="checked">Hit the gym</li>
+            <li class="checked">Pay bills</li>
+            <li>Meet George</li>
+            <li>Buy eggs</li>
+            <li>Read a book</li>
+            <li>Organize office</li>
+        </ul>
+    </div>
+</body>
+
+</html>
